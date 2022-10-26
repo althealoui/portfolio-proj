@@ -36,16 +36,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Works</a>
+              <a class="nav-link" href="#works">Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -54,22 +54,26 @@
 
     <!-- top -->
 
-    <div class="container-fluid row front">
+    <div class="container-fluid row front" id="home">
       <div
         class="container-fluid top-left col-md-6 text-center d-none d-md-block d-sm-none">
-        <div class="d-none d-lg-block d-md-none box"></div>
-        <img src="img/thea.png" class="img-fluid" alt="" />
+        <div class="top-animate">
+          <div class="d-none d-lg-block d-md-none box"></div>
+          <img src="img/thea.png" class="img-fluid" alt="" />
+        </div>
       </div>
       <div class="container-fluid top-right col-md-6 pt-5 pt-sm-0">
-        <p class="m-0">Hi</p>
-        <h1 class="m-0">I'm Althea Louise</h1>
-        <h5>Web Developer</h5>
-        <a href="#" class="btn mt-2">Hire me</a>
+        <div class="top-animate">
+          <p class="m-0">Hi</p>
+          <h1 class="m-0">I'm Althea Louise</h1>
+          <h5>Web Developer</h5>
+          <a href="#" class="btn mt-2">Hire me</a>
+        </div>
       </div>
     </div>
 
     <!-- about -->
-    <div class="about">
+    <div class="about" id="about">
       <div class="container">
         <div class="row">
           <div class="left-about col-lg-6">
@@ -106,7 +110,7 @@
     </div>
 
     <!-- works -->
-    <div class="works">
+    <div class="works" id="works">
       <div class="container work-container">
         <h3>Works</h3>
         <p>
@@ -115,30 +119,36 @@
         </p>
         <div class="row">
           <div class="col-lg-6">
-            <div class="work-box">
-              <p class="work-title">pig game</p>
-              <img src="img/pig.png" alt="" />
-            </div>
-            <div class="work-box">
-              <p class="work-title">Tweetteer</p>
-              <img src="img/tweet.png" alt="" />
-            </div>
+            <a href="https://althealoui.github.io/pig-game/">
+              <div class="work-box">
+                <p class="work-title">pig game</p>
+                <img src="img/pig.png" alt="" /></div
+            ></a>
+            <a href="https://althealoui.github.io/tweetteer/">
+              <div class="work-box">
+                <p class="work-title">Tweetteer</p>
+                <img src="img/tweet.png" alt="" /></div
+            ></a>
           </div>
           <div class="col-lg-6">
-            <div class="work-box">
-              <p class="work-title">game shop</p>
-              <img src="img/game.png" alt="" />
-            </div>
-            <div class="work-box">
-              <p class="work-title">modal</p>
-              <img src="img/modal.png" alt="" />
-            </div>
+            <a href="https://althealoui.github.io/game-shop/">
+              <div class="work-box">
+                <p class="work-title">game shop</p>
+                <img src="img/game.png" alt="" />
+              </div>
+            </a>
+            <a href="https://althealoui.github.io/modal/">
+              <div class="work-box">
+                <p class="work-title">modal</p>
+                <img src="img/modal.png" alt="" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="row">
         <div class="col-lg-6 contact-left">
           <h3>Send me a message</h3>

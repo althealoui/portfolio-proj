@@ -37,6 +37,7 @@ h3 {
 
 .img-fluid {
   width: 540px;
+  position: relative;
 }
 
 .container-fluid {
@@ -52,6 +53,8 @@ h3 {
   position: absolute;
   right: 260px;
   bottom: 90px;
+
+  animation: box-animate 1s ease-in-out;
 }
 
 .btn {
@@ -94,6 +97,7 @@ h3 {
 
 .navbar-brand {
   color: #008e89 !important;
+  font-weight: bold;
 }
 
 .navbar-brand:hover {
@@ -299,5 +303,20 @@ h3 {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+}
+
+/* animation */
+
+.top-animate {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
