@@ -1,0 +1,303 @@
+body {
+  background-color: #2c2c2c;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  font-weight: bold;
+}
+
+p,
+a,
+h1,
+h3 {
+  color: #ffffff !important;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-item {
+  margin-left: 50px !important;
+}
+
+.front {
+  z-index: -1;
+  margin-top: -56px !important;
+}
+
+.top-right {
+  background-color: #008e89;
+  padding-top: 250px !important;
+  padding-left: 100px !important;
+}
+
+.top-left {
+  position: relative;
+}
+
+.img-fluid {
+  width: 540px;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  z-index: -1;
+  width: 300px;
+  height: 350px;
+  background-color: #008e89;
+  position: absolute;
+  right: 260px;
+  bottom: 90px;
+}
+
+.btn {
+  border: 2px solid #2c2c2c;
+  width: 150px;
+}
+
+.btn:hover {
+  background-color: #2c2c2c;
+  color: #008e89 !important;
+  font-weight: bold !important;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  z-index: 5;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #ffffff;
+
+  transition: 300ms ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.nav-item:hover::after {
+  transform: scale(1);
+}
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: #008e89 !important;
+}
+
+.navbar-brand:hover {
+  font-weight: 500;
+}
+
+.navbar {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.about {
+  background-color: #313131;
+}
+
+.nav-scroll {
+  background-color: #2c2c2c !important;
+  transition: 400ms ease-in-out;
+  transform-origin: top;
+  transform: scale(1);
+}
+
+/* about */
+
+.row {
+  margin: 0;
+}
+
+.left-about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 100px !important;
+}
+
+.right-about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+
+.about-items {
+  width: 100px;
+  margin: 10px;
+}
+
+/* work */
+
+.work-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.work-box {
+  position: relative;
+  width: auto;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 25px !important;
+}
+
+.work-box img {
+  width: 100%;
+}
+
+.work-title {
+  position: absolute;
+  font-size: 32px !important;
+  background-color: #008e89;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  text-align: center;
+  padding-top: 130px;
+  font-weight: bold;
+}
+
+.work-box:hover .work-title {
+  opacity: 0 !important;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+/* contact */
+
+.contact {
+  background-color: #313131;
+}
+
+.contact-left {
+  background-color: #008e89;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 110px;
+}
+
+.contact-right {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 110px;
+}
+
+.form-group {
+  width: 350px;
+}
+
+.form-control {
+  background-color: #008e89;
+  border: 2px solid #313131;
+}
+
+.send-btn {
+  margin-top: 20px;
+}
+
+.icons img {
+  margin-right: 10px !important;
+}
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+  .top-right {
+    padding-top: 0 !important;
+    padding: 130px 130px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  a {
+    font-size: 30px !important;
+  }
+  .navbar-toggler {
+    z-index: 10 !important;
+  }
+  #navbarNav {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .navbar-nav {
+    background-color: #313131;
+    width: 100%;
+    height: 650px;
+    padding-top: 90px;
+    align-items: center;
+    opacity: 0.9;
+  }
+
+  .bg-transparent {
+    z-index: 10 !important;
+  }
+
+  .navbar-brand {
+    z-index: 1;
+  }
+
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-item {
+    margin: 0 !important;
+  }
+
+  /* about */
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .left-about {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .right-about {
+    margin: auto;
+    padding: 0 !important;
+    width: 400px;
+  }
+
+  /* contact */
+  .contact-left {
+    padding: 0 !important;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+
+  .contact-left h3 {
+    text-align: center;
+  }
+  .form-group {
+    margin: auto;
+    width: 450px;
+  }
+
+  .contact-right {
+    padding: 0;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
